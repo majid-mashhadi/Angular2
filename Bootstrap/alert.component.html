@@ -1,0 +1,5 @@
+﻿
+<div id="divError" [class]="'alert alert-' + config.type" role="alert" [hidden]="!config.show">
+    <button id="linkClose" class="close" (click)="hide()" *ngIf="config.dismiss">&times;</button>
+    <span id="errorText"><ng-content></ng-content></span>
+</div>
