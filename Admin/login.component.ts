@@ -25,8 +25,8 @@ import { ISubscription } from 'rxjs/Subscription';
     providers: [UserService]
 })
 export class LoginComponent implements OnInit {
-    username: string = 'Test1@test.com';
-    password: string = 'Test12!@';
+    username: string = '';
+    password: string = '';
     errorMessage: string = '';
     alertConfig: AlertConfig;
     subscription: ISubscription;
